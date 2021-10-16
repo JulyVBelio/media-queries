@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconos/icons8-video-48.png" type="image/x-icon">
+    <title>Video 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+        body{
+            font-family: 'Amatic SC', cursive;
+        }
+
+        h1, h2{
+            text-align: center;
+        }
+
+        .grid-container{
+            background-color: #E7FFAC;
+            display: grid;
+            grid-template-columns: 150px auto 150px;
+            grid-template-rows: repeat(3, 100px);
+            grid-gap: 10px;
+        }
+
+        /* Estilo a todo lo que hay dentro de .grid-container */
+        .grid-container > *{
+            font-size: 1.5rem;
+            background-color: #FFF5BA;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header, footer{
+            /* Otra forma de escribir la línea 34 es grid-column: 1 / span 3 */
+            grid-column: 1 / 4;
+        }
+
+        @media all and (max-width: 600px) {
+            aside, article{
+                /* Otra forma de escribir la línea 34 es grid-column: 1 / span 3 */
+                grid-column: 1 / 4;
+            }
+
+            .grid-container{
+                grid-template-rows: repeat(5, 100px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Video 2</h1>
+    <h2>Ejemplo de LAYOUT con CSS Grid y Media Queries</h2>
+
+    <div class="grid-container">
+        <header>Header</header>
+        <aside class="left">Left</aside>
+        <article>Artículo</article>
+        <aside class="right">Right</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

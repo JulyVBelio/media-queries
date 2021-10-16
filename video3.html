@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconos/icons8-video-48.png" type="image/x-icon">
+    <title>Video 3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+        body {
+            font-family: 'Amatic SC', cursive;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+        }
+
+        /* Aplicar un estilo al momento de la vista preeliminar de imprimir */
+        /* @media print{
+            body{
+                background-color: white;
+            }
+
+            h1, h2{
+                color: black;
+            }
+        } */
+
+        /* @media screen and (max-width: 480px){
+            body{
+                background-color: #ACE7FF;
+            }
+
+            h1, h2{
+                color: black;
+            }
+        } */
+
+        /* Aplicar un estilo cuando hay un determinado rango */
+        /* @media screen and (min-width: 480px) and (max-width: 720px){
+            body{
+                background-color: #AFCBFF;
+            }
+
+            h1, h2{
+                color: black;
+            }
+        } */
+
+        header{
+            background-color: #F7BE0F;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        nav{
+            background-color: #F0A50D;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        section{
+            background-color: #DF5308;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        article{
+            background-color: #BD0002;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        aside{
+            background-color: #BF0004;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        footer{
+            background-color: #BD0002;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Estilo para una pantalla de teléfono */
+        @media screen and (max-width: 480px){
+            header{
+                grid-column: 1 / -1;
+            }
+
+            nav{
+                grid-column: 1 / -1;
+            }
+
+            section{
+                grid-column: 1 / -1;
+                grid-row: 3 / span 3;
+            }
+
+            article{
+                grid-column: 1 / -1;
+                grid-row: 6 / span 2;
+            }
+
+            aside{
+                grid-column: 1 / -1;
+                grid-row: 8 / span 2;
+            }
+
+            footer{
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 768px){
+            header{
+                grid-column: 1 / -1;
+            }
+
+            nav{
+                grid-column: 1 / span 6;
+                grid-row: 2 / span 3;
+            }
+
+            section{
+                grid-column: 7 / span 6;
+                grid-row: 2 / span 3;
+            }
+
+            article{
+                grid-column: 1 / span 6;
+                grid-row: 5 / span 2;
+            }
+
+            aside{
+                grid-column: 7 / span 6;
+                grid-row: 5 / span 2;
+            }
+
+            footer{
+                grid-column: 1 / -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Video 3</h1>
+    <h2>CSS3 desde CERO!!! - #14 QUE ES MEDIA QUERY??? 💻 Curso CSS3</h2>
+
+    <div class="grid-container">
+        <header>Header</header>
+        <nav>Nav</nav>
+        <section>Section</section>
+        <article>Article</article>
+        <aside>Aside</aside>
+        <footer>Footer</footer>    
+    </div>
+</body>
+</html>
